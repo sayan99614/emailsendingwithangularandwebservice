@@ -17,7 +17,7 @@ public class EmailService {
         boolean f=false;
         String form = "dheemanpati1@gmail.com";
 
-        String host = "smtp.gmail.com";
+        String host = "";//your email
         Properties properties = System.getProperties();
 
         properties.put("mail.smtp.host", host);
@@ -30,7 +30,7 @@ public class EmailService {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
                 // TODO Auto-generated method stub
-                return new PasswordAuthentication("dheemanpati1@gmail.com", "sayan@1999");
+                return new PasswordAuthentication("", "");//your mail and password
             }
 
         });
